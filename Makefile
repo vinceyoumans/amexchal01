@@ -1,24 +1,20 @@
 
-BINARY_NAME=amex01
+
+build:
+	go build -o bin/amex01  main.go
+
+run:
+	go run main.go
+
+
 
 hello:
 	echo "Hello"
 
-build:
-	go build -o bin/amex  main.go
 
 
-test:
 
-	echo "-------   changing to libs"
-	pwd
-	echo "-------   changing to libs"
-	cd ../libs
-	pwd
-	ls -a
-	cd t02
-	echo "listed libs-------"
-	go test -v
+
 
 
 
